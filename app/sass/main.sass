@@ -1,0 +1,388 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+.top-header
+  background-color: #000d1e
+  padding: 32px 0
+  .logo
+    img
+      display: block
+  .actions
+    margin-left: 202px
+    .action__item
+      font-size: 0px
+      display: block
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+  .search-container
+    margin-left: 46px
+    .search-form
+      width: 311px
+      position: relative
+      margin-top: 10px
+      .search-field
+        width: 100%
+        font-size: 12px
+        padding: 11px 0
+        background-color: transparent
+        text-indent: 12px
+        border-width: 1px
+        border-color: rgb(72, 75, 79)
+        border-style: solid
+        color: #797c7f
+      input[type=image]
+        position: absolute
+        right: 12px
+        top: 50%
+        margin-top: -9px
+        cursor: pointer
+
+  .search-container
+    .time
+      font-size: 12px
+      color: #9ba1aa
+      letter-spacing: 0.2px
+    .socials
+      .link
+        display: inline-block
+        margin-right: 8px
+        &:last-child
+          margin-right: 0
+        .soc
+          display: block
+          height: 17px
+          width: 20px
+          background-image: url(../img/soc.png)
+        .fb
+          background-position: 34% 0%
+        .tw
+          background-position: 68% 0
+        .inst
+          background-position: 100% 0
+  .call-container
+    margin-left: 44px
+    .phone
+      a
+        color: #fefefe
+        font-size: 18px
+        margin-top: -3px
+        display: block
+        text-decoration: none
+    .button-wrp
+      margin-top: 11px
+      .button
+        color: #00a2ff
+        border: 1px solid rgb(0, 162, 255)
+        width: 187px
+        height: 36px
+        background: transparent
+        cursor: pointer
+
+.navigation
+  background: #fff
+  .menu
+    display: flex
+    justify-content: space-around
+
+    .item-menu
+
+
+      &:last-child
+        .link
+          border-right: 0px
+      .link
+        font-size: 16px
+        display: block
+        color: #000d1e
+        margin: 24px 0px
+        border-right: 1px solid #dfdfdf
+        padding: 3px 30px
+        text-decoration: none
+    .active
+      border-bottom: 3px solid #00a2ff
+      .link
+        color: #797c7f
+
+.special-offers
+  .title-container
+    padding: 26px 0
+  .title-section
+    color: #000d1e
+    text-transform: uppercase
+    font-size: 16px
+    margin-right: 32px
+    letter-spacing: 0.2px
+    padding-left: 30px
+
+  .show-all
+    display: flex
+    color: #484b4f
+    width: 226px
+    font-size: 14px
+    letter-spacing: 0.2px
+    height: 36px
+    border: 1px solid rgb(0, 162, 255)
+    justify-content: center
+    align-items: center
+    text-decoration: none
+  .products-container
+    padding-bottom: 82px
+    border-bottom: 1px solid #c3cad5
+    .slick-arrow
+      position: absolute
+      right: 45px
+      z-index: 99
+      top: -55px
+      cursor: pointer
+      background: url(../img/arrow.svg) no-repeat
+      width: 12px
+      height: 24px
+      font-size: 0
+      border: 0
+      outline: none
+      &:hover
+        background: url(../img/arrow-hover.svg) no-repeat
+    .slick-prev
+      right: 80px
+      transform: rotateY(180deg)
+    .slick-list
+      border: 1px solid #e7eaec
+    .slick-slide
+      border-right: 1px solid #e7eaec
+    .item-product
+      background-color: #fff
+      padding: 25px 0px
+      padding-top: 78px
+      transition: .5s ease background-color
+
+
+      &:hover
+        background-color: #e7eaec
+        transition: .5s ease background-color
+      .wrapper-img
+        text-align: center
+        a
+          display: inline-block
+
+      .padding-left
+        padding-left: 30px
+      .title-product
+        font-size: 12px
+        font-weight: normal
+        margin-top: 20px
+        padding-left: 30px
+        margin-bottom: 11px
+        a
+          color: #000d1e
+          text-decoration: none
+    .text
+      color: #797c7f
+      font-size: 12px
+      margin-top: 4px
+    .price
+      margin-left: 10px
+      line-height: 1.4
+      .old
+        color: #797c7f
+        font-size: 16px
+        text-decoration: line-through
+      .new
+        font-size: 16px
+        font-weight: bold
+        color: #000d1e
+
+.brands
+  .title-section
+    color: #000d1e
+    text-transform: uppercase
+    font-size: 16px
+    margin-right: 32px
+    letter-spacing: 0.2px
+    padding: 31px 0
+    padding-left: 30px
+
+  .brands-container
+    display: grid
+    grid-template-columns: repeat(6, 1fr)
+    a
+      margin-bottom: 20px
+    .item-brand
+      border: 1px solid rgb(236, 236, 236)
+      width: 181px
+      height: 94px
+      background: #fff
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 13px
+
+.main-footer
+  margin-top: 80px
+  background-color: #000d1e
+  padding-bottom: 90px
+  .footer-logo
+    text-align: center
+    img
+      margin-top: -27px
+  .links
+    padding: 0
+    margin: 0
+    border-right: 1px solid #484b4f
+    padding-right: 73px
+    margin-right: 77px
+    padding-left: 30px
+    &:last-child
+      border: 0
+      margin-right: 0
+      padding-right: 0
+      padding-left: 0
+    .link-item
+      display: block
+      margin-bottom: 18px
+      &:last-child
+        margin-bottom: 0
+      a
+        text-decoration: none
+        font-size: 16px
+        color: #f1f3f5
+      a.active
+        color: #00a2ff
+  .search-container
+    margin-left: 97px
+    .search-form
+      width: 311px
+      position: relative
+      margin-top: 17px
+      margin-bottom: 34px
+      .search-field
+        width: 100%
+        font-size: 12px
+        padding: 11px 0
+        background-color: transparent
+        text-indent: 12px
+        border-width: 1px
+        border-color: rgb(72, 75, 79)
+        border-style: solid
+        color: #797c7f
+      input[type=image]
+        position: absolute
+        right: 12px
+        top: 50%
+        margin-top: -9px
+        cursor: pointer
+  .actions
+    .action__item
+      margin-right: 29px
+      &:last-child
+        margin: 0
+  .search-container
+    .time
+      font-size: 12px
+      color: #9ba1aa
+      letter-spacing: 0.2px
+    .socials
+      .link
+        display: inline-block
+        margin-right: 8px
+        &:last-child
+          margin-right: 0
+        .soc
+          display: block
+          height: 17px
+          width: 20px
+          background-image: url(../img/soc.png)
+        .fb
+          background-position: 34% 0%
+        .tw
+          background-position: 68% 0
+        .inst
+          background-position: 100% 0
+  .call-container
+    margin-left: 44px
+    .phone
+      a
+        color: #fefefe
+        font-size: 18px
+        margin-top: -3px
+        display: block
+        text-decoration: none
+    .button-wrp
+      margin-top: 17px
+      .button
+        color: #00a2ff
+        border: 1px solid rgb(0, 162, 255)
+        width: 187px
+        height: 36px
+        background: transparent
+        cursor: pointer
+
+.copyright
+  font-size: 12px
+  padding: 22px 0
+  .copy
+    color: #797c7f
+    padding-left: 30px
+    margin-right: 82px
+  .cards
+    color: #000d1e
+    align-items: center
+    img
+      margin-left: 14px
+      margin-right: 17px
+
+.slider
+  position: relative
+  .item-slider
+    height: 797px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+  .slick-dots
+    position: relative
+    z-index: 999
+    margin: 0
+    margin-top: -157px
+    margin-bottom: 36px
+    padding: 0
+    text-align: center
+    li
+      display: inline-block
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background: #fff
+      margin-right: 13px
+      cursor: pointer
+      button
+        display: none
+    li.slick-active
+      background: #9ba1aa
+
+  .slick-arrow
+    width: 42px
+    height: 74px
+    font-size: 0
+    position: absolute
+    top: 50%
+    margin-top: -37px
+    z-index: 999
+    background-color: transparent
+    background-image: url(../img/arrow-slider.svg)
+    border: 0
+    outline: none
+    cursor: pointer
+    opacity: 0.55
+    transition: .5s ease opacity
+    &:hover
+      opacity: 1
+      transition: .5s ease opacity
+  .slick-prev
+    left: 50px
+  .slick-next
+    right: 50px
+    transform: rotateY(180deg)
+
+@import "media" // Всегда в конце
