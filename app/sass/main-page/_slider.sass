@@ -1,0 +1,52 @@
+.slider
+  position: relative
+  .item-slider
+    height: 797px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+  .slick-dots
+    position: relative
+    z-index: 999
+    margin: 0
+    margin-top: -157px
+    margin-bottom: 36px
+    padding: 0
+    text-align: center
+    li
+      display: inline-block
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background: #fff
+      margin-right: 13px
+      cursor: pointer
+      button
+        display: none
+    li.slick-active
+      background: #9ba1aa
+
+  .slick-arrow
+    width: 42px
+    height: 74px
+    font-size: 0
+    position: absolute
+    top: 50%
+    margin-top: 23px
+    z-index: 999
+    background-color: transparent
+    background-image: url(../img/arrow-slider.svg)
+    border: 0
+    outline: none
+    background-repeat: no-repeat
+    cursor: pointer
+    opacity: 0.55
+    transition: .5s ease opacity
+    &:hover
+      opacity: 1
+      transition: .5s ease opacity
+  .slick-prev
+    left: 100px
+  .slick-next
+    right: 100px
+    transform: rotateY(180deg)

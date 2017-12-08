@@ -16,4 +16,10 @@ $(function() {
     	$('.item-menu').removeClass('active');
     	$(this).addClass('active');
     });
+
+    // Разделяет розряд чисел в товарах
+	let listPrice = $('.price');
+	for(let i = 0; i < listPrice.length; i++){
+		listPrice[i].innerHTML = listPrice[i].innerHTML.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+	}
 });
