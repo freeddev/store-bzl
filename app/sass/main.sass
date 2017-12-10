@@ -6,6 +6,7 @@
 @import "./main-page/slider"
 @import "./main-page/brand"
 @import "./main-page/special-offers"
+@import "./instock/instock"
 
 .top-header
   background-color: #000d1e
@@ -19,8 +20,16 @@
       font-size: 0px
       display: block
       margin-right: 30px
+      height: 39px
+      background-repeat: no-repeat
       &:last-child
         margin-right: 0
+      &:nth-child(1)
+        width: 85px
+        background-image: url(../img/actions/a1.svg)
+      &:nth-child(2)
+        width: 123px
+        background-image: url(../img/actions/a2.svg)
   .search-container
     margin-left: 46px
     .search-form
@@ -105,7 +114,14 @@
   .menu
     display: flex
     justify-content: space-around
+    position: relative
     .item-menu
+      /*&:hover
+        .submenu
+          z-index: 1
+          opacity: 1
+          transform: translateY(0px)
+          transition: 0.75s ease transform*/
       &:last-child
         .link
           border-right: 0px
@@ -124,6 +140,16 @@
       border-bottom: 3px solid #00a2ff
       .link
         color: #797c7f
+  /*.submenu
+    padding: 0
+    margin: 0
+    position: absolute
+    background: #fff
+    width: 100%
+    z-index: 1
+    transition: 0.5s ease transform
+    .item-menu
+      display: inline-block*/
 
 
 
@@ -256,5 +282,26 @@
       margin-right: 8px
 
 
+.breadcrumbs
+  .path
+    display: flex
+    margin-top: 24px
+    font-size: 12px
+    padding-left: 30px
+    .path-link
+      color: #797c7f
+      text-decoration: none
+
+      &:after
+        content: '—'
+        padding: 0 10px
+        text-decoration: none !important
+      &:last-child
+        color: #000d1e
+        &:after
+          content: none
+      .txt
+        &:hover
+          text-decoration: underline
 
 @import "media" // Всегда в конце
