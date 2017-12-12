@@ -18,8 +18,21 @@ $(function() {
     });
 
     // Разделяет розряд чисел в товарах
-	let listPrice = $('.price');
-	for(let i = 0; i < listPrice.length; i++){
+	var listPrice = $('.price');
+	for(var i = 0; i < listPrice.length; i++){
 		listPrice[i].innerHTML = listPrice[i].innerHTML.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
 	}
+
+
+
+
+
+    $('.item-sidebar .title').click(function () {
+        $(this).next().is(':visible') ? $(this).removeClass('open').next().fadeOut(400) : $(this).addClass('open').next().fadeIn(400);
+    });
+    
 });
+
+
+
+
