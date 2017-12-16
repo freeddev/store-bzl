@@ -30,9 +30,34 @@ $(function() {
     $('.item-sidebar .title').click(function () {
         $(this).next().is(':visible') ? $(this).removeClass('open').next().fadeOut(400) : $(this).addClass('open').next().fadeIn(400);
     });
-    
+
+    $('.current-img').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.images'
+    });
+    $('.images').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.current-img',
+        focusOnSelect: true,
+    });
+
+
 });
 
 
 
 
+(function($) {
+    $(function() {
+
+        $('.full__caption').on('click', '.item:not(.active)', function() {
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.wrp-detail').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+        });
+
+    });
+})(jQuery);

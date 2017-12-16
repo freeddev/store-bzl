@@ -1,0 +1,139 @@
+.current-product
+  background-color: #fff
+  padding-top: 40px
+  .product-information
+    width: 100%
+    padding-right: 30px
+    padding-left: 35px
+    .product-title
+      font-weight: normal
+      font-size: 24px
+      color: #000d1e
+      line-height: 1.25
+      margin-top: -6px
+    .sale
+      color: #ffff
+      background-image: url(../img/sale.svg)
+      background-repeat: no-repeat
+      font-size: 12px
+      text-transform: uppercase
+      height: 26px
+      padding-left: 7px
+      padding-right: 21px
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      position: relative
+      margin-top: 40px
+      &:before 
+        content: ''
+        width: 450px
+        height: 1px
+        background: #dfdfdf
+        position: absolute
+        left: 96px
+        top: 50%
+        margin-top: -0.5px
+    .main-information
+      font-size: 16px
+      margin-top: 26px
+      margin-bottom: 31px
+      border-bottom: 1px solid #dfdfdf
+      padding-bottom: 15px
+      .inf-section
+        margin-bottom: 8.4px
+        line-height: 39px
+        .title
+          min-width: 226px
+          color: #797c7f
+    .wrp-order
+      .order
+        border: 1px solid rgb(0, 162, 255)
+        background-color: rgb(0, 162, 255)
+        width: 224px
+        height: 48px
+        color: #fff
+        text-transform: uppercase
+        font-size: 14px
+        font-weight: bold
+        cursor: pointer
+    .presence
+      .present
+        color: #17c615
+        font-weight: bold
+        font-size: 14px
+        position: relative
+        padding-left: 25px
+        margin-left: 37px
+        &:before
+          content: '•'
+          font-size: 20px
+          position: absolute
+          left: 0
+          height: 12px
+          margin-top: -6px
+          top: 50%
+          line-height: 12px
+
+.spec-price
+        color: #ff6c6c
+        font-weight: bold
+        font-size: 24px
+
+.detail-img
+    width: 571px
+    padding: 0 30px
+    .current-img
+      width: 506px
+    .images
+      position: relative
+      margin-left: -4px
+      .slick-arrow
+        position: absolute
+        z-index: 200
+        width: 30px
+        height: 95%
+        margin-top: -11px
+        font-size: 0
+        border: 0
+        background-color: #fff
+        background-image: url(../img/arrow.svg)
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        cursor: pointer
+        outline: none
+        top: 10px
+        &:hover
+          background-image: url(../img/arrow-hover.svg)
+      .slick-next
+        right: -25px
+      .slick-prev
+        left: -25px
+        transform: rotateY(180deg)
+      .current-img
+        margin-left: 4px
+        width: 502px
+      .wrapper-small
+        padding: 0 5px
+        cursor: pointer
+        img
+          width: 100%
+          border: 1px solid #ececec
+      .slick-current
+        .wrapper-small
+          img
+            border: 1px solid #00a2ff
+      .slick-slide
+        outline: none
+
+.full-information
+  background-color: #fff
+  .full__caption
+    background-color: #f1f3f5
+    .item
+      cursor: pointer
+  .wrp-detail
+    .tabs__content
+      display: none
+    .tabs__content.active
+      display: block
