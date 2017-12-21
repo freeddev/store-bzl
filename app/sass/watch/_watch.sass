@@ -1,4 +1,18 @@
 .watch.products-wrapper
+  .ev-good
+    font-size: 14px
+    width: 224px
+    height: 36px
+    color: #000d1e
+    border: 1px solid rgb(0, 162, 255)
+    background: transparent
+    transition: .5s ease all
+    cursor: pointer
+    margin-right: 30px
+    &:hover
+      background: #00a2ff
+      color: #fff
+      transition: .5s ease all
   .title-section
     padding-left: 30px
     font-size: 16px
@@ -20,6 +34,10 @@
           color: #000d1e
           text-decoration: none
           margin-left: 18px
+          &:hover
+            border-bottom: 1px solid
+        a.active 
+          border-bottom: 1px solid
     .sidebar
       width: 230px
       .checkbox
@@ -64,6 +82,7 @@
           height: 340px
           padding: 0
           margin: 0
+          border-bottom: 1px solid #dfdfdf
           .filter-item
             color: #000d1e
             font-size: 12px

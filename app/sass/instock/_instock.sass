@@ -12,6 +12,24 @@
     grid-column-gap: 44px
     grid-row-gap: 24px
     .item-catalog
+      .wrp-img
+        img
+          outline: 1px solid transparent
+          outline-offset: 0
+          transform: scale(1)
+          transition: .5s ease all
+      &:hover
+        .title-product
+          a
+            color: #00a2ff
+            transition: .5s ease all
+        .wrp-img
+          img
+            outline: 1px solid #00a2ff
+            outline-offset: -30px
+            transform: scale(1.02)
+            transition: .5s ease all
+
       .title-product
         font-weight: normal
         font-size: 16px
@@ -21,3 +39,4 @@
         a
           text-decoration: none
           color: #000d1e
+          transition: .5s ease all

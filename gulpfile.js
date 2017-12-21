@@ -26,7 +26,8 @@ gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slick-carousel/slick/slick.js',
-        'app/libs/simplebar/dist/simplebar.js'
+        'app/libs/simplebar/dist/simplebar.js',
+		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify()) // Минимизировать весь js (на выбор)

@@ -10,7 +10,12 @@
       font-size: 24px
       color: #000d1e
       line-height: 1.25
-      margin-top: -6px
+      margin-top: -9px
+      letter-spacing: 0.6px
+      position: relative
+      padding-bottom: 47px
+      margin-bottom: 30px
+      border-bottom: 1px solid #dfdfdf
     .sale
       color: #ffff
       background-image: url(../img/sale.svg)
@@ -23,32 +28,26 @@
       display: inline-flex
       justify-content: center
       align-items: center
-      position: relative
-      margin-top: 40px
-      &:before 
-        content: ''
-        width: 450px
-        height: 1px
-        background: #dfdfdf
-        position: absolute
-        left: 96px
-        top: 50%
-        margin-top: -0.5px
+      position: absolute
+      left: 0
+      bottom: -13px
     .main-information
       font-size: 16px
-      margin-top: 26px
-      margin-bottom: 31px
+      margin-top: 18px
+      margin-bottom: 40px
       border-bottom: 1px solid #dfdfdf
-      padding-bottom: 15px
+      padding-bottom: 23px
+      min-height: 368px
       .inf-section
-        margin-bottom: 8.4px
+        margin-bottom: 10px
         line-height: 39px
+        letter-spacing: 0.6px
         .title
           min-width: 226px
           color: #797c7f
     .wrp-order
       .order
-        border: 1px solid rgb(0, 162, 255)
+        border: 0
         background-color: rgb(0, 162, 255)
         width: 224px
         height: 48px
@@ -57,14 +56,21 @@
         font-size: 14px
         font-weight: bold
         cursor: pointer
+        transition: 0.5s ease background-color
+        &:hover
+          background-color: #ff6c6c
+          transition: 0.5s ease background-color
     .presence
+      margin-left: 37px
+      font-size: 14px
+      .odr
+        color: #797c7f
       .present
         color: #17c615
         font-weight: bold
-        font-size: 14px
         position: relative
         padding-left: 25px
-        margin-left: 37px
+
         &:before
           content: '•'
           font-size: 20px
@@ -75,10 +81,14 @@
           top: 50%
           line-height: 12px
 
+.wrapper-large
+  img
+    width: 100%
+
 .spec-price
-        color: #ff6c6c
-        font-weight: bold
-        font-size: 24px
+  color: #ff6c6c
+  font-weight: bold
+  font-size: 24px
 
 .detail-img
     width: 571px
@@ -88,6 +98,7 @@
     .images
       position: relative
       margin-left: -4px
+      margin-top: 12px
       .slick-arrow
         position: absolute
         z-index: 200
@@ -106,7 +117,7 @@
         &:hover
           background-image: url(../img/arrow-hover.svg)
       .slick-next
-        right: -25px
+        right: -26px
       .slick-prev
         left: -25px
         transform: rotateY(180deg)
@@ -128,12 +139,100 @@
 
 .full-information
   background-color: #fff
+  padding-top: 65px
+  border-bottom: 1px solid #f1f3f5
   .full__caption
     background-color: #f1f3f5
+    padding: 30px 0
     .item
       cursor: pointer
+      display: inline-block
+      margin-left: 30px
+      margin-right: 45px
+      letter-spacing: 0.6px
+      color: #000d1e
+      font-weight: bold
+      line-height: 1
+      transition: .25s ease color
+      &:hover
+        color: #00a2ff
+        transition: .25s ease color
+    .item.active
+      color: #00a2ff
+      border-bottom: 2px solid
+    .item.we
+      color: #797c7f
   .wrp-detail
     .tabs__content
       display: none
+      padding: 0 30px
+      width: 571px
+
+      min-width: 571px
+
+      .body-txt
+        .body-title
+          margin-bottom: 17px
+          display: block
+        .prg-txt
+          color: #000d1e
+          margin-bottom: 30px
+      .tab-title
+        color: #000d1e
+        font-size: 24px
+        font-weight: normal
+        padding-top: 74px
+        padding-bottom: 43px
+        border-bottom: 1px solid #dfdfdf
+        margin-bottom: 40px
+        letter-spacing: 0.6px
+      .tab-inf
+        font-size: 16px
+        margin-top: 26px
+        padding-bottom: 15px
+        letter-spacing: 0.6px
+        .inf-section
+          margin-bottom: 29px
+          line-height: 1.25
+          .title
+            min-width: 226px
+            color: #797c7f
+          .val
+            color: #000d1e
     .tabs__content.active
       display: block
+    .why-bzl
+      padding: 0 30px
+      padding-left: 94px
+      padding-top: 82px
+      padding-bottom: 72px
+      border-left: 1px solid #dfdfdf
+      .item
+        margin-bottom: 34px
+        &:nth-child(1)
+          .title
+            background-position-y: -1%
+        &:nth-child(2)
+          .title
+            background-position-y: 29%
+        &:nth-child(3)
+          .title
+            background-position-y: 71%
+        &:nth-child(4)
+          .title
+            background-position-y: 100%
+        .title
+          text-transform: uppercase
+          padding-left: 55px
+          padding-top: 5px
+          padding-bottom: 5px
+          margin-bottom: 6px
+          background: url(../img/bzl-w.png) no-repeat
+          -ms-background-position-x: 3px
+          background-position-x: 3px
+          letter-spacing: 0.6px
+        .txt
+          color: #797c7f
+          letter-spacing: 0.6px
+
+

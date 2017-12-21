@@ -10,11 +10,16 @@
 @import "./watch/watch"
 @import './product/product'
 
+.rate
+  color: #797c7f
+  font-size: 14px
+  margin-left: 5px
 .current-brand
   font-size: 16px
   text-transform: uppercase
-  margin-bottom: 13px
-  margin-top: 20px
+  margin-bottom: 8px
+  margin-top: 11px
+  letter-spacing: 2.25px
   .txt
     padding-left: 30px
 
@@ -229,6 +234,10 @@
         text-decoration: none
         font-size: 16px
         color: #f1f3f5
+        transition: .25s ease color
+        &:hover
+          color: #9a9fa5
+          transition: .25s ease color
       a.active
         color: #00a2ff
   .search-container
@@ -350,5 +359,75 @@
       .txt
         &:hover
           text-decoration: underline
+
+.order-form,
+.call-form
+  width: 430px
+  margin: auto
+  background: #fff
+  padding: 50px
+  position: relative
+  button.mfp-close
+    width: 25px
+    height: 25px
+    background: url(../img/close.svg) no-repeat
+    background-size: cover
+    position: absolute
+    right: 30px
+    top: 30px
+    font-size: 0
+  .call-inform
+    text-align: center
+    font-size: 14px
+    text-transform: uppercase
+    letter-spacing: 1.25px
+    color: #797c7f
+    padding-bottom: 39px
+    margin-bottom: 39px !important
+    margin-top: 30px
+  .order-inform
+    border-bottom: 1px solid #dfdfdf
+    margin-bottom: 15px
+  .item
+    .title
+      color: #797c7f
+      font-size: 14px
+      text-transform: uppercase
+      margin-bottom: 15px
+    .val
+      color: #000d1e
+      font-size: 18px
+      margin-bottom: 15px
+    .spec
+      color: #ff6c6c
+      font-weight: 700
+      font-size: 24px
+  .order-contact-inform
+    input[type=text]
+      width: 100%
+      outline: none
+      background-color: #f1f3f5
+      font-size: 12px
+      color: #797c7f
+      border: 0
+      text-indent: 30px
+      padding: 18px 0
+      margin-bottom: 10px
+  .send-button
+    width: 100%
+    background-color: rgb(0, 162, 255)
+    height: 48px
+    border: 0
+    outline: none
+    font-size: 14px
+    font-weight: bold
+    text-transform: uppercase
+    color: #fff
+    cursor: pointer
+#call-modal
+  .send-button
+    margin-top: 20px
+
+
 
 @import "media" // Всегда в конце
