@@ -49,7 +49,7 @@
                         <a href="#" class="link">+7 (911) 266-16-77</a>
                     </div>
                     <div class="button-wrp">
-                        <button class="button">Перезвоните мне</button>
+                        <button class="button open-popup" href="#call-modal">Перезвоните мне</button>
                     </div>
                 </div>
             </div>
@@ -197,7 +197,7 @@
                         <a href="#" class="link">+7 (911) 266-16-77</a>
                     </div>
                     <div class="button-wrp">
-                        <button class="button">Перезвоните мне</button>
+                        <button class="button open-popup" href="#call-modal">Перезвоните мне</button>
                     </div>
                 </div>
             </div>
@@ -219,6 +219,53 @@
             </div>
         </div>
     </div>
+</div>
+<!--
+    Popup
+-->
+<div id="order-modal" class="mfp-hide order-form">
+    <form action="#">
+        <div class="close"></div>
+        <div class="order-inform">
+            <div class="item">
+                <div class="title">Ваш заказ</div>
+                <div class="val">Мужские наручные часы <span class="block">Fossil FS4487</span></div>
+            </div>
+            <div class="item">
+                <div class="title">Цена</div>
+                <div class="val spec">5.000$</div>
+            </div>
+        </div>
+        <div class="order-contact-inform">
+            <div class="item">
+                <div class="title">Контактная информация</div>
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="text" name="phone" placeholder="+7(ХХХ) ХХХ-ХХ-ХХ">
+            </div>
+        </div>
+        <button class="send-button" type="submit">
+            Заказать
+        </button>
+    </form>
+</div>
+<div id="call-modal" class="mfp-hide order-form">
+    <form action="#">
+        <div class="close"></div>
+        <div class="call-inform order-inform">
+            <span class="block">отправьте ваше имя и телефон</span>
+            <span class="block">и наш специалист свяжется</span>
+            <span class="block">с вами в ближайшее время</span>
+        </div>
+        <div class="order-contact-inform">
+            <div class="item">
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="text" name="phone" placeholder="+7(ХХХ) ХХХ-ХХ-ХХ">
+            </div>
+        </div>
+        <button class="send-button" type="submit">
+            Заказать
+        </button>
+    </form>
 </div>
 <link rel="stylesheet" href="../css/main.min.css">
 <script src="../js/scripts.min.js"></script>
