@@ -78,3 +78,7 @@ sortItem.click(function () {
     sortItem.removeClass('active');
     $(this).addClass('active');
 });
+
+
+//$('.wrapper-large .link').loupe();
+
