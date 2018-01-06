@@ -451,4 +451,41 @@
       width: 100%
       opacity: .75
 
+.item-product
+  .status-inform
+    padding: 39px 0
+    height: 26px
+  .status
+    padding-right: 30px
+    font-size: 12px
+  .status.no-present
+
+    color: #797c7f
+  .status.present
+    color: #17c615
+    position: relative
+    padding-left: 25px
+
+    &:before
+      content: '•'
+      font-size: 22px
+      position: absolute
+      left: 3px
+      top: 0
+      line-height: 17px
+  .sale
+    color: #fff
+    font-size: 12px
+    height: 26px
+    display: flex
+    padding-left: 7px
+    left: 0
+    align-items: center
+    width: 96px
+    top: 26px
+    background: url(../img/sale.svg)
+  .hidden.sale
+    font-size: 0
+    height: 0
+
 @import "media" // Всегда в конце
